@@ -13,7 +13,8 @@ var Iframe = React.createClass({
         return {
             height: "100%",
             width: "100%",
-            position: "fixed"
+            position: "fixed",
+            name: ""
         };
     },
 
@@ -26,7 +27,7 @@ var Iframe = React.createClass({
             frameBorder: "0",
             src: this.props.url,
             style: { position: this.props.position, height: this.props.height, width: this.props.width },
-            height: this.props.height, width: this.props.width });
+            height: this.props.height, width: this.props.width, name: this.props.name });
     }
 });
 
